@@ -7,7 +7,7 @@ module.exports = {
 
     validateNotFound: (res) => {
         return res.status(HTTP_STATUS_CODE.NOT_FOUND).send({
-            message: 'Location Not Found',
+            message: 'Location Not Found'
         });
     }
 }

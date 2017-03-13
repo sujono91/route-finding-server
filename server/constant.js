@@ -5,5 +5,9 @@ module.exports = {
     NO_CONTENT: 204,
     BAD_REQUEST: 400,
     NOT_FOUND: 404
+  },
+  PATH: {
+    API: '/api',
+    LOCATIONS: '/locations'
   }
 };
