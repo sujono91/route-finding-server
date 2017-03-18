@@ -1,25 +1,25 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "findroute",
-    "host": "127.0.0.1",
+    "username": "b075fae45e8992",
+    "password": "f1e89400",
+    "database": "heroku_cd4fac4cc5a56bd",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "findroute",
-    "host": "127.0.0.1",
+    "username": "b075fae45e8992",
+    "password": "f1e89400",
+    "database": "heroku_cd4fac4cc5a56bd",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "findroute",
-    "host": "127.0.0.1",
+    "username": "b075fae45e8992",
+    "password": "f1e89400",
+    "database": "heroku_cd4fac4cc5a56bd",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
     "dialect": "mysql"
   }
