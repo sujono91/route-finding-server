@@ -12,7 +12,7 @@ module.exports = {
   view(req, res) {
     return location.findAll({
       order: [
-        ['createdAt', 'DESC'],
+        ['createdAt', 'ASC'],
       ],
     });
   },
