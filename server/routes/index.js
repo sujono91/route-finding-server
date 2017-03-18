@@ -1,3 +1,5 @@
+/** @name Application Routing */
+
 const locationController = require('../controllers').locationController;
 const PATH = require('../constant').PATH;
 

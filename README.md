@@ -38,4 +38,4 @@ npm start
 
 ### Known Issues
 - There's still a known issue for inactivity timeout (`Unhandled rejection SequelizeBaseError: Quit inactivity timeout`).
-However, this is the [issue](https://github.com/mysqljs/mysql/issues/1334) of ClearDB (MySQL addons in heroku) and not affect the HTTP request from client.
+However, this is the [issue](https://github.com/mysqljs/mysql/issues/1334) of ClearDB (MySQL addons in Heroku) and not affect the HTTP request from client.

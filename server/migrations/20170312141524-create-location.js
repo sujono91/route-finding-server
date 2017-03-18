@@ -1,3 +1,5 @@
+/** @name Migration from Location Class*/
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('locations', {

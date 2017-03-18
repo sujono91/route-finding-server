@@ -1,3 +1,9 @@
+/** @class LocationModel
+ * @property {float}  latitude latitude value
+ * @property {float}  longitude longitude value
+ * @property {string}  address address based on geolocation of latitude and longitude
+*/
+
 module.exports = (sequelize, DataTypes) => {
   const location = sequelize.define('location', {
     latitude: DataTypes.FLOAT,
