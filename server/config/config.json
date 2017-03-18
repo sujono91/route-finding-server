@@ -5,7 +5,12 @@
     "database": "heroku_cd4fac4cc5a56bd",
     "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
   },
   "test": {
     "username": "b075fae45e8992",
@@ -13,7 +18,12 @@
     "database": "heroku_cd4fac4cc5a56bd",
     "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
   },
   "production": {
     "username": "b075fae45e8992",
@@ -21,6 +31,11 @@
     "database": "heroku_cd4fac4cc5a56bd",
     "host": "us-cdbr-iron-east-03.cleardb.net",
     "port": "3306",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
   }
 }
