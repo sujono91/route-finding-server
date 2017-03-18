@@ -36,6 +36,9 @@ npm start
 ### Sequelize CLI
 - You can see how to use migration, generate model, etc using Sequelize CLI in [here](https://github.com/sequelize/cli)
 
+### Docs
+- You can see the documentation on `docs` folder
+
 ### Known Issues
 - There's still a known issue for inactivity timeout (`Unhandled rejection SequelizeBaseError: Quit inactivity timeout`).
 However, this is the [issue](https://github.com/mysqljs/mysql/issues/1334) of ClearDB (MySQL addons in Heroku) and not affect the HTTP request from client.
