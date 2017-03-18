@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: migrations/20170312141524-create-location.js</title>
+    <title>JSDoc: Source: constant.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: migrations/20170312141524-create-location.js</h1>
+    <h1 class="page-title">Source: constant.js</h1>
 
     
 
@@ -26,40 +26,22 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/** @name Migration from Location Class*/
+            <pre class="prettyprint source linenums"><code>/** @name Application Constant */
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('locations', {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      latitude: {
-        type: Sequelize.FLOAT
-      },
-      longitude: {
-        type: Sequelize.FLOAT
-      },
-      address: {
-        type: Sequelize.STRING
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      }
-    });
+  HTTP_STATUS_CODE: {
+    OK: 200,
+    CREATED: 201,
+    NO_CONTENT: 204,
+    BAD_REQUEST: 400,
+    NOT_FOUND: 404
   },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('locations');
+  PATH: {
+    API: '/api',
+    LOCATIONS: '/locations'
   }
-};</code></pre>
+};
+</code></pre>
         </article>
     </section>
 

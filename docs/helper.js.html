@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: migrations/20170312141524-create-location.js</title>
+    <title>JSDoc: Source: helper.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: migrations/20170312141524-create-location.js</h1>
+    <h1 class="page-title">Source: helper.js</h1>
 
     
 
@@ -26,40 +26,34 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/** @name Migration from Location Class*/
+            <pre class="prettyprint source linenums"><code>/** @class Helper */
+const HTTP_STATUS_CODE = require('./constant').HTTP_STATUS_CODE;
 
 module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('locations', {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      latitude: {
-        type: Sequelize.FLOAT
-      },
-      longitude: {
-        type: Sequelize.FLOAT
-      },
-      address: {
-        type: Sequelize.STRING
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      }
-    });
-  },
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('locations');
-  }
-};</code></pre>
+    /**
+    * Send HTTP Status Bad Request
+    * @memberof Helper
+    * @function sendError
+    * @param req {Object} Request
+    * @param res {Object} Response
+    */
+    sendError: (res, error) => {
+        return res.status(HTTP_STATUS_CODE.BAD_REQUEST).send(error);
+    },
+
+    /**
+    * Send HTTP Status Not Found with Message
+    * @memberof Helper
+    * @function validateNotFound
+    * @param req {Object} Request
+    * @param res {Object} Response
+    */
+    validateNotFound: (res) => {
+        return res.status(HTTP_STATUS_CODE.NOT_FOUND).send({
+            message: 'Location Not Found'
+        });
+    }
+}</code></pre>
         </article>
     </section>
 

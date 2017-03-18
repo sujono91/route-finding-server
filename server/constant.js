@@ -1,3 +1,5 @@
+/** @name Application Constant */
+
 module.exports = {
   HTTP_STATUS_CODE: {
     OK: 200,
